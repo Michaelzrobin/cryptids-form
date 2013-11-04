@@ -12,6 +12,32 @@ body {
     padding-top:80px;
 }
 
+.invisible{
+    display:none;
+}
+
+legend{
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+input[type="text"]{
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    background: none;
+    border: 1px dashed rgba(0,0,0,.7);
+
+}
+
+input[type="text"]:focus{
+    background: rgba(255,255,255,.5);
+}
+
+legend{
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 /* TAGLINE*/
 
 h1, h2, h3 {
