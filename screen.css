@@ -16,22 +16,69 @@ body {
     display:none;
 }
 
+.checkout{
+    background-color: rgba(210,235,255,.5);
+    padding-top: 2em;
+}
+
+fieldset{
+    margin-bottom: .9em;
+}
+
 legend{
     margin-bottom: 0;
     border-bottom: 0;
 }
 
-input[type="text"]{
+.text-input{
     text-transform: uppercase;
     margin-bottom: .5em;
     background: none;
     border: 1px dashed rgba(0,0,0,.7);
-
 }
 
+
+select{
+    margin-bottom: .5em;
+}
+
+textarea.cryptid-textarea{
+    height: 6em;
+}
+textarea.cryptid-textarea:focus{
+    background: rgba(255,255,255,.5);
+}
 input[type="text"]:focus{
     background: rgba(255,255,255,.5);
 }
+
+.radio-check{
+    display: none;
+}
+
+.radio-check + label {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 5px 30px 10px 0px;
+}
+
+
+.radio-check:checked + label .glyphicon.glyphicon-ok{
+    display: inline-block;
+    margin-right: 4px;
+}
+
+input[type="radio"]:checked + label{
+    background-color: rgba(255,255,255,.5);
+    border: 1px solid transparent ;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+.glyphicon.glyphicon-ok {
+    display: none;
+}
+
 
 legend{
     border: none;

@@ -63,14 +63,91 @@
     <br><br>
 </div>
 
-<div class="container">
-    <fieldset class="row">
-        <legend class="col-md-3">about you</legend>
-        <div class="col-md-9">
-            <input type="text" class="form-control" placeholder="Your name">
-            <input type="text" class="form-control" placeholder="your email address">
-            <input type="text" class="form-control" placeholder="your phone number">
-        </div>
-    </fieldset>
+
+    <!-- ORDER FORM -->
+
+<div class="checkout">
+
+    <div class="container">
+
+    <!-- ABOUT YOU FIELDS -->
+
+        <fieldset class="row">
+            <legend class="col-md-3">about you</legend>
+            <div class="col-md-9">
+                <input type="text" class="form-control text-input" placeholder="Your name">
+                <input type="text" class="form-control text-input" placeholder="your email address">
+                <input type="text" class="form-control text-input" placeholder="your phone number">
+            </div>
+        </fieldset>
+
+    <!-- ACCESSORIES CHECKBOXES -->
+
+        <fieldset class="row">
+            <legend class="col-md-3">accessories</legend>
+            <div class="col-md-9">
+                <input type="checkbox" class="radio-check" id="nosering" name="nosering">
+                <label for="nosering"> <i class="glyphicon glyphicon-ok"></i>Nosering</label>
+
+                <input type="checkbox" class="radio-check" id="axe" name="axe">
+                <label for="axe"><i class="glyphicon glyphicon-ok"></i>Axe</label>
+
+                <input type="checkbox" class="radio-check" id="facepaint" name="facepaint">
+                <label for="facepaint"><i class="glyphicon glyphicon-ok"></i>Facepaint</label>
+
+                <input type="checkbox" class="radio-check" id="xl-horns" name="xl-horns">
+                <label for="xl-horns"><i class="glyphicon glyphicon-ok"></i>xl-horns</label>
+            </div>
+        </fieldset>
+
+    <!-- CURRENCY RADIO BUTTONS -->
+
+        <fieldset class="row">
+            <legend class="col-md-3">currency</legend>
+            <div class="col-md-9">
+                <input type="radio" class="radio-check" id="USD" name="Currency">
+                <label for="USD" name="currency">
+                    <i class="glyphicon glyphicon-usd"></i>
+                    USD
+                </label>
+
+                <input type="radio" class="radio-check" id="GBP" name="Currency">
+                <label for="GBP" name="currency">
+                    <i class="glyphicon glyphicon-gbp"></i>
+                    GBP
+                </label>
+
+                <input type="radio" class="radio-check" id="EURO" name="Currency">
+                <label for="EURO" name="currency">
+                    <i class="glyphicon glyphicon-euro"></i>
+                    EURO
+                </label>
+            </div>
+        </fieldset>
+
+    <!-- PAYMENT TYPE DROPDOWN -->
+
+
+        <fieldset class="row">
+            <legend class="col-md-3">payment type</legend>
+            <div class="col-md-3">
+                <select class="form-control" name="payment" id="payment">
+                    <option value="1">Amex</option>
+                    <option value="2">Visa</option>
+                    <option value="3">Mastercard</option>
+                </select>
+            </div>
+        </fieldset>
+
+    <!-- CUSTOM SPELL TALL FIELD -->
+        <fieldset class="row">
+            <legend class="col-md-3">Custom Spells</legend>
+            <div class="col-md-9">
+                <textarea class="form-control cryptid-textarea text-input" name="custom spell" id="custom spell" placeholder="eg by the power of greyskull">
+    </textarea>
+            </div>
+        </fieldset>
+    </div>
+</div>
 </body>
 </html>
